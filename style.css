@@ -138,7 +138,6 @@ body{
 .course-card{
     flex-basis: 250px;
     margin: 10px 0px 0px 10px;
-    flex-grow: 1;
     background-color: rgb(209, 205, 205);
     padding: 10px;
     border-radius: 10px;
