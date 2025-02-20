@@ -170,7 +170,6 @@ body{
     margin: 5px;
     padding: 5px;
     text-align: center;
-    flex-grow: 1;
 }
 
 /* Popular */
@@ -189,7 +188,6 @@ body{
 .popular-card{
     flex-basis: 250px;
     margin: 20px 10px 0px 10px;
-    flex-grow: 1;
     padding: 5px;
 }
 
