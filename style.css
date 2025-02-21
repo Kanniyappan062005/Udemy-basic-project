@@ -288,5 +288,6 @@ body{
     .navbar__s4{
         display: block;
         font-size: 15px;
+        margin-right:10px;
     }
 }
