@@ -63,16 +63,17 @@ body{
 
 .mylearning__popup{
     position: absolute;
-    width: 100px;
+    width: 150px;
     border: black solid 1px;
     background-color: white;
-    top: 150%;
+    top: 100%;
     padding: 10px;
     display: none;
 }
 
 .mylearning:hover .mylearning__popup{
     display: block;
+    opacity: 0.9;
 }
 
 
@@ -92,10 +93,15 @@ body{
     padding: 5px 15px 5px 15px ;
     border-radius: 35px;
     font-weight: bolder;
+    border: rgb(111, 0, 255) solid 1px;
+
 }
 
 .categories p:hover{
-    transform: scale(1.03);
+    background-color: transparent;
+    transition: 0.5s;
+    color: rgb(111, 0, 255);
+    border: rgb(111, 0, 255) solid 1px;
     cursor: pointer;
 }
 
@@ -118,9 +124,29 @@ body{
     padding: 2%;
     background-color: white;
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: 25%;
+    left: 50px;
+    animation-name: zoom;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
+
+@keyframes zoom {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+
+}
+
+
 
 /* Recommended */
 
@@ -188,6 +214,7 @@ body{
     flex-basis: 250px;
     margin: 20px 10px 0px 10px;
     padding: 5px;
+    border: transparent solid 0.01px ;
 }
 
 .popular-card:hover{
